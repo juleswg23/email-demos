@@ -1,0 +1,26 @@
+---
+title: Something wonderful
+format: email
+---
+
+Some of the content in this document makes its way to the rendered
+HTML and some of it is destined for a custom email message. The
+`email` block customizes the subject and the body of the email
+message, while the rendered HTML contains only this paragraph.
+
+
+::: {.email}
+
+::: {.subject}
+Buy groceries
+:::
+
+Remember to pick up groceries on you way home. Tonight is "breakfast
+for dinner" and we're having French Toast!
+
+* Bread
+* Eggs
+* Butter
+* Milk
+
+:::

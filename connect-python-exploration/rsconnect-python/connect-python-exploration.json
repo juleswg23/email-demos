@@ -1,0 +1,12 @@
+{
+    "https://dogfood.team.pct.posit.it/": {
+        "server_url": "https://dogfood.team.pct.posit.it/",
+        "filename": "/Users/jules-wg/Repos/email-demos/connect-python-exploration",
+        "app_url": "https://dogfood.team.pct.posit.it/content/97436f7a-002a-4b2a-abc3-3191fa73ad02/",
+        "app_id": "94428",
+        "app_guid": "97436f7a-002a-4b2a-abc3-3191fa73ad02",
+        "title": "connect-python-exploration",
+        "app_mode": "quarto-static",
+        "app_store_version": 1
+    }
+}

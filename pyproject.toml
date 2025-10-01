@@ -1,0 +1,12 @@
+[project]
+name = "email-demos"
+version = "0.1.0"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "connect-python-exploration",
+    "existing-python-packages",
+    "quarto-email",
+]

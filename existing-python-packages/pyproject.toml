@@ -1,0 +1,19 @@
+[project]
+name = "existing-python-packages"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "dotenv>=0.9.9",
+    "envelopes>=0.4",
+    "great-tables>=0.18.0",
+    "ipykernel>=6.30.1",
+    "mailgun>=1.0.2",
+    "mailtrap>=2.2.0",
+    "plotnine>=0.13.6",
+    "redmail>=0.6.0",
+    "resend>=2.15.0",
+    "sendgrid>=6.12.5",
+    "yagmail>=0.15.293",
+]

@@ -1,0 +1,102 @@
+---
+title: "Recent sales trends"
+format: email
+---
+
+```{python}
+#| echo: false
+
+import datetime
+import pandas as pd
+import random
+import matplotlib.dates as mdates
+
+# Randomly generate data that acts as 30-day trailing unit sales.
+today = datetime.datetime.today()
+data = pd.DataFrame({
+    'Date': pd.date_range(
+        today - datetime.timedelta(days=30),
+        today - datetime.timedelta(days=1),
+    ),
+    'Sales': [random.randint(75, 100) for _ in range(1, 31)],
+})
+
+last = data['Sales'].values[-1]
+previous = data['Sales'].values[-2]
+compared_to = "constant"
+if last > previous:
+    compared_to = "higher"
+elif last < previous:
+    compared_to = "lower"
+
+def scatter():
+    ax = data.plot(
+        title = "Unit sales (30 days)",
+        x = "Date",
+        y = "Sales",
+        kind = "scatter",
+        grid = True)
+    # The x-axis is too crowded if we include every day.
+    ax.xaxis.set(
+        major_locator=mdates.WeekdayLocator(),
+    )
+
+def hist():
+    ax = data.plot(
+        title = "Unit sale frequency (30 days)",
+        y = "Sales",
+        xlabel = "Sales",
+        legend = False,
+        kind = "hist",
+        bins = 5,
+        grid = True)
+```
+
+Testing an edit to this document
+
+
+This document summarizes recent sales information, produces some
+plots, and composes an email message containing the most important
+details.
+
+The scatter plot showing recent sales information is included in
+both the rendered document and the email message.
+
+```{python}
+#| echo: false
+
+scatter()
+```
+
+The histogram is only included in the rendered document.
+
+```{python}
+#| echo: false
+
+hist()
+```
+
+::: {.email}
+
+::: {.subject}
+sales are `{python} compared_to`
+:::
+
+<!-- conditional sending -->
+
+::: {.email-scheduled}
+`{python} True`
+:::
+
+Testing an edit to this email
+
+This email message has a dynamic subject and embeds the same
+scatter plot that is in the rendered document.
+
+```{python}
+#| echo: false
+
+scatter()
+```
+
+:::
