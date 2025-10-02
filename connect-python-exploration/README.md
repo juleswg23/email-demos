@@ -1,4 +1,4 @@
-# What the "connect-python-exploration" sub-directory is for
+## Sending an email in Connect from a Quarto document
 
 This is specific to Python, and is an implementation of the demo of sending an email via an uploaded Quarto document to Connect. Like the `quarto-email` directory in this repository, we are sending an email body which was generated via Quarto, but this time it is sent via Connect.
 

@@ -1,4 +1,4 @@
-# What the "connect-rmd-exploration" sub-directory is for
+## Sending an email in Connect from an RMarkdown document
 
 The create-connect-example.r script generates the `connect_examples` directory. 
 

@@ -1,4 +1,4 @@
-# What the "quarto-email" sub-directory is for
+## Generating an email from Quarto (without Connect integration)
 
 This sub-directory features a quarto document (quarto-email-demo.qmd) featuring the format: email field. Then there is an email block, which allows us to run the following to produce a preview at `email-preview/index.html`:
 

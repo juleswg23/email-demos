@@ -4,7 +4,7 @@
 
 I've tested out a number of existing Python resources to generate and send emails. I was most satisfied with Redmail, but like Blastula, we could do all of the SMTP legwork with the built-in libraries email and smtplib.
 
-Each .qmd file corresponds to a service I tested. Most services have their own Python libraries. Each library has it's own quirks. For example, Sendgrid requires you to use many data classes. (sendgrid.qmd)
+Each .qmd file corresponds to a service I tested. Most services have their own Python libraries. Each library has it's own quirks. For example, Sendgrid requires you to use many dataclasses ([sendgrid.qmd](./sendgrid.qmd)).
 
 ## Comparing Python email services
 
@@ -16,5 +16,6 @@ Each .qmd file corresponds to a service I tested. Most services have their own P
 
 ## Email library quirks
 
- TODO
-- 
+Specifically for the cdase study of sending inline attachments, each library differs slightly in the setup.
+
+
