@@ -13,7 +13,7 @@ view_credential_keys()
 
 test_message <- prepare_test_message()
 
-img_file_path <- "../existing-python-packages/img/sunset.jpeg"
+img_file_path <- "existing-python-packages/img/sunset.jpeg"
 
 img_html <- add_image(file = img_file_path)
 
