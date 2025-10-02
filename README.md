@@ -1,4 +1,4 @@
-Navigate to each subdirectory to see an example (or set of examples)
+## Navigate to each subdirectory to see an example (or set of examples)
 
 1. blastula-r has a simple execution of a Blastula email.
 2. connect-python-exploration has a Quarto document with Python blocks uploaded to Connect.
