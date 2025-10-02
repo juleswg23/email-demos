@@ -11,3 +11,5 @@ Then within the `connect_examples` directory, we can upload connect-example.main
 It's deployment can be found here: https://dogfood.team.pct.posit.it/connect/#/apps/82121d5c-e44b-445e-b46b-fbbe9c7cdacd/content-view
 
 Emails can also be generated in Rmd/Connect with Rmd metadata, an approach that feels more bespoke and not easily replicable in an open source Python package. That process is described here: https://docs.posit.co/connect/user/rmarkdown/#r-markdown-email-metadata
+
+<img width="1306" height="804" alt="image" src="https://github.com/user-attachments/assets/d5142520-3dae-4ade-840d-52aac7c56d0d" />
