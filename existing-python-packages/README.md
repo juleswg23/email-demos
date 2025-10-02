@@ -16,6 +16,7 @@ Each .qmd file corresponds to a service I tested. Most services have their own P
 
 ## Email library quirks
 
-Specifically for the cdase study of sending inline attachments, each library differs slightly in the setup.
+Specifically for the case study of sending inline attachments, each library differs slightly in the setup.
 
+<img width="716" height="381" alt="image" src="https://github.com/user-attachments/assets/7c6ef92d-d08f-4bfd-b5dd-e0b346ef76f3" />
 
