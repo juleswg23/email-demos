@@ -73,10 +73,6 @@ email_body = f"""<!doctype html>
   </body>
 </html>"""
 
-# Write the email body to an HTML file for preview
-# with open("email_preview.html", "w") as f:
-#   f.write(email_body)
-
 email_body
 ```
 

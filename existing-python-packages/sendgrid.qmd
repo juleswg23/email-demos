@@ -11,7 +11,6 @@ from io import BytesIO
 ```
 
 ``` {python}
-
 # Simple text
 body_text = "<p>Hello, this is a test email with text, a plot, an image, and a table.</p>"
 
@@ -75,10 +74,6 @@ email_body = f"""<!doctype html>
 {body_text + plot_html + image_html + table_html}
   </body>
 </html>"""
-
-# Write the email body to an HTML file for preview
-# with open("email_preview.html", "w") as f:
-#     f.write(email_body)
 
 email_body
 

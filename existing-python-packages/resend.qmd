@@ -21,12 +21,10 @@ body_text = "<p>Hello, this is a test email with text, a plot, an image, and a t
 # Simple plot with plotnine
 df = pd.DataFrame({'x': [1, 2, 3], 'y': [3, 2, 1]})
 p = ggplot(df, aes('x', 'y')) + geom_point() + labs(title="A Simple Plot")
+
 buf = BytesIO()
 p.save(buf, format='png')
 buf.seek(0)
-# plot_base64 = base64.b64encode(buf.read()).decode('utf-8')
-# plot_html = f'<img src="cid:image/png;base64,{plot_base64}" alt="plotnine plot"/><br>'
-
 
 plot_bytes = buf.read()
 plot_attachment = {
@@ -43,11 +41,7 @@ plot_html
 
 
 ```{python}
-# Simple image (embed as base64)
 image_path = "img/sunset.jpeg"
-
-# with open(image_path, "rb") as img_file:
-#     image_base64 = base64.b64encode(img_file.read()).decode('utf-8')
 
 with open(image_path, "rb") as img_file:
     image_bytes = img_file.read()
@@ -56,8 +50,6 @@ image_attachment = {
     "filename": "photo.jpeg",
     "content_id": "photo-image"
 }
-
-# image_html = f'<img src="cid:image/jpeg;base64,{image_base64}" alt="placeholder image"/><br>'
 
 image_html = '<img src="cid:photo-image" alt="placeholder image"/><br>'
 
@@ -92,9 +84,6 @@ email_body = f"""<!doctype html>
   </body>
 </html>"""
 
-# Write the email body to an HTML file for preview
-# with open("email_preview.html", "w") as f:
-#     f.write(email_body)
 
 email_body
 

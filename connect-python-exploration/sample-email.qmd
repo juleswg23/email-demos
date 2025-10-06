@@ -85,7 +85,7 @@ sales are `{python} compared_to`
 <!-- conditional sending -->
 
 ::: {.email-scheduled}
-`{python} True`
+`{python} False`
 :::
 
 Testing an edit to this email

@@ -70,6 +70,7 @@ The annoying bit with this is you have to write the plot to a file, you can't di
 The table is also a little mangled
 ```{python}
 from dotenv import load_dotenv
+
 load_dotenv()
 
 import yagmail
@@ -78,8 +79,12 @@ password = os.environ["GMAIL_APP_PASSWORD"]
 username = "jules.walzergoldfeld@gmail.com"
 
 yag = yagmail.SMTP(username, password)
-contents = [yagmail.raw(email_body), yagmail.inline(image_path), yagmail.inline(plot_path),]
+contents = [
+    yagmail.raw(email_body),
+    yagmail.inline(image_path),
+    yagmail.inline(plot_path),
+]
 
-yag.send(username, 'subject', contents)
+yag.send(username, "subject", contents)
 
 ```
